@@ -1,0 +1,41 @@
+{
+	"title": "Project Timeline",
+	"content": {
+		"type": "table",
+		"introduction": "Estimated project completion: 4 weeks from kickoff",
+		"columns": ["Phase", "Duration", "Description"],
+		"rows": [
+			{
+				"phase": "Discovery & Planning",
+				"duration": "3 Days",
+				"description": "Requirements gathering, project scope definition, and kickoff meeting"
+			},
+			{
+				"phase": "Design & Prototyping",
+				"duration": "4 Days",
+				"description": "UI/UX design, wireframes, mockups, and client approval"
+			},
+			{
+				"phase": "Development (Frontend)",
+				"duration": "7 Days",
+				"description": "UI implementation, responsive components, and interactive elements"
+			},
+			{
+				"phase": "Development (Backend/API)",
+				"duration": "5 Days",
+				"description": "API development, database setup, and content management system"
+			},
+			{
+				"phase": "Testing & QA",
+				"duration": "4 Days",
+				"description": "Functional testing, cross-browser compatibility, and performance optimization"
+			},
+			{
+				"phase": "Deployment & Launch",
+				"duration": "3 Days",
+				"description": "Server setup, domain configuration, and website launch"
+			}
+		],
+		"footer": "Total Delivery Timeline: 4 Weeks"
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"title": "Technology Stack",
+	"content": {
+		"type": "sections",
+		"introduction": "I have carefully selected modern, robust technologies to ensure your website is fast, secure, and maintainable. The proposed tech stack provides the perfect foundation for a professional corporate website.",
+		"items": [
+			{
+				"name": "Frontend",
+				"technologies": [
+					"Next.js (App Router) - React framework for production",
+					"Tailwind CSS + Shadcn UI - Utility-first CSS and accessible components",
+					"React Query - Data fetching and state management",
+					"Zustand - Lightweight state management"
+				]
+			},
+			{
+				"name": "Backend",
+				"technologies": [
+					"NestJS (TypeScript, modular API design) - Enterprise-grade Node.js framework",
+					"RESTful API architecture - Standardized endpoints",
+					"Supabase (Postgres, Auth, Storage) - Open-source Firebase alternative"
+				]
+			},
+			{
+				"name": "Deployment",
+				"technologies": [
+					"Docker Compose (multi-container) - Containerized application deployment",
+					"Traefik (reverse proxy, SSL, auto-renew) - Modern edge router",
+					"Custom self-managed Linux VPS (firewall, CI/CD, SSH hardening) - Complete control over infrastructure",
+					"CI/CD pipeline - Automated testing and deployment"
+				]
+			}
+		],
+		"note": "All technologies used are open-source and industry-standard, ensuring long-term maintainability and avoiding vendor lock-in."
+	}
+}

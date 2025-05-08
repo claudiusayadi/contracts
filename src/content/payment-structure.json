@@ -1,0 +1,38 @@
+{
+	"title": "Payment Structure",
+	"content": {
+		"type": "table",
+		"introduction": "Our milestone-based payment structure ensures you only pay as the project progresses, with clear deliverables at each stage.",
+		"columns": ["Milestone", "Payment (₦)", "Description"],
+		"rows": [
+			{
+				"milestone": "Kickoff (30%)",
+				"payment": "225,000",
+				"description": "Upon project agreement and planning"
+			},
+			{
+				"milestone": "Design Completion (30%)",
+				"payment": "225,000",
+				"description": "After UI/UX and design approval"
+			},
+			{
+				"milestone": "Development Completion (30%)",
+				"payment": "225,000",
+				"description": "Upon final testing and internal QA"
+			},
+			{
+				"milestone": "Project Launch (10%)",
+				"payment": "75,000",
+				"description": "After deployment and post-launch verification"
+			}
+		],
+		"footer": {
+			"total": "₦750,000"
+		},
+		"paymentMethods": [
+			"Bank transfer (local and international)",
+			"Invoices provided before each payment milestone",
+			"Payment confirmation within 2 business days"
+		]
+	}
+}

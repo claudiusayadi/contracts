@@ -1,0 +1,28 @@
+{
+	"title": "Overview",
+	"content": {
+		"type": "paragraphs",
+		"items": [
+			"I propose a fully custom-built, responsive, and high-performance corporate website, hosted independently with open-source technologies on a self-managed VPS. This digital solution will replace the client's legacy WordPress site with modern web architecture that prioritizes speed, security, and scalability.",
+			"The new site will embody contemporary UI/UX principles, optimal SEO structure, exceptional load times, and a scalable architecture designed for both effective business promotion and meaningful stakeholder engagement."
+		],
+		"features": [
+			{
+				"title": "High Performance",
+				"description": "Optimized for speed with modern web technologies and best practices for loading times."
+			},
+			{
+				"title": "Fully Responsive",
+				"description": "Seamless experience across all devices - desktop, tablet, and mobile."
+			},
+			{
+				"title": "SEO Optimized",
+				"description": "Built with search engines in mind to improve your online visibility."
+			},
+			{
+				"title": "Secure & Reliable",
+				"description": "Implemented with security best practices and regular maintenance."
+			}
+		]
+	}
+}

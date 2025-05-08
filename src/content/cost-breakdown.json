@@ -1,0 +1,56 @@
+{
+	"title": "Cost Breakdown",
+	"content": {
+		"type": "table",
+		"introduction": "Our transparent pricing structure ensures you know exactly what you're investing in. The following breakdown covers all aspects of your website development project.",
+		"columns": ["Item", "Cost (₦)", "Description"],
+		"rows": [
+			{
+				"item": "Domain Renewal (.com)*",
+				"cost": "25,000",
+				"description": "Annual renewal, DNS configuration"
+			},
+			{
+				"item": "VPS Hosting (1 Year)*",
+				"cost": "100,000",
+				"description": "Secure custom Linux VPS, CI/CD, Traefik, firewall, backups"
+			},
+			{
+				"item": "SSL Certificate*",
+				"cost": "20,000",
+				"description": "Secure HTTPS connection with Let's Encrypt integration"
+			},
+			{
+				"item": "Post-Launch Support (1 week)*",
+				"cost": "20,000",
+				"description": "Bug fixes, minor content/logic updates"
+			},
+			{
+				"item": "Design & Development",
+				"cost": "480,000",
+				"description": "Full-stack implementation with modern technologies (Tailwind + NestJS)"
+			},
+			{
+				"item": "Testing & QA",
+				"cost": "80,000",
+				"description": "Performance, mobile responsiveness & WCAG accessibility audits"
+			},
+			{
+				"item": "Deployment & Configuration",
+				"cost": "45,000",
+				"description": "Docker setup, CI/CD pipeline, reverse proxy & domain configuration"
+			},
+			{
+				"item": "Contingency",
+				"cost": "50,000",
+				"description": "Buffer for scope adjustments and revisions"
+			}
+		],
+		"footer": {
+			"totalEstimate": "₦820,000",
+			"totalNotes": "Inclusive of all development, testing, and initial support",
+			"payableTotal": "₦750,000",
+			"payableTotalNotes": "Excluding asterisked items, see LSO for details"
+		}
+	}
+}

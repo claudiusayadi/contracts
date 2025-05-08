@@ -1,0 +1,17 @@
+{
+	"title": "Long-term Support Offer (LSO)",
+	"content": {
+		"type": "offer",
+		"introduction": "After the initial post-launch support period, we offer an optional long-term support package to ensure your website continues to perform optimally and remains secure.",
+		"cost": "₦100,000 per year",
+		"benefits": [
+			"Waived annual domain renewal, VPS hosting, and SSL costs",
+			"Monthly preventive maintenance & uptime checks",
+			"Priority response (within 72 hours) for support requests",
+			"Content updates and minor design adjustments",
+			"Regular security patches and software updates",
+			"Monthly performance and analytics reports"
+		],
+		"note": "This support package is optional and can be purchased at any time after the project completion"
+	}
+}

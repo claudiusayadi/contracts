@@ -1,0 +1,19 @@
+{
+	"title": "Acceptance",
+	"content": {
+		"type": "signature",
+		"text": "This document is a formal project contract. To proceed, please confirm in writing or return a signed version. Finalized work commences upon receipt of the first milestone payment.",
+		"signatures": [
+			{
+				"role": "Software Engineer",
+				"name": "Claudius Ayadi",
+				"email": "ayadiclaudius@gmail.com"
+			},
+			{
+				"role": "Client",
+				"name": "Explorers 33 Group",
+				"email": "infos@explorers33group.com"
+			}
+		]
+	}
+}

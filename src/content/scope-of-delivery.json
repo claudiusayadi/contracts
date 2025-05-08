@@ -1,0 +1,40 @@
+{
+	"title": "Scope of Delivery",
+	"content": {
+		"type": "categories",
+		"introduction": "This proposal covers the complete development and deployment of a professional corporate website for Explorers 33 Group, including all necessary technical implementation and initial support.",
+		"categories": [
+			{
+				"name": "Website Development",
+				"items": [
+					"Fully responsive corporate website optimized for all devices",
+					"Custom layouts: Home, About, Services, Projects, Articles, Contact, Legal",
+					"Interactive service showcase with detailed descriptions",
+					"Blog module built from scratch with public REST API",
+					"Project portfolio with filterable gallery",
+					"Team member profiles and expertise highlights"
+				]
+			},
+			{
+				"name": "Technical Implementation",
+				"items": [
+					"Modern industry-standard, open-source tech stack",
+					"SEO optimization for improved search visibility",
+					"Performance optimization for fast loading times",
+					"Cross-browser compatibility testing",
+					"Mobile responsiveness across all device sizes"
+				]
+			},
+			{
+				"name": "Deployment & Support",
+				"items": [
+					"Dockerized application with CI/CD pipeline",
+					"Deployment on custom-secured VPS",
+					"SSL certificate implementation",
+					"Basic analytics setup",
+					"Post-launch technical support for 1 week* - see LSO"
+				]
+			}
+		]
+	}
+}
