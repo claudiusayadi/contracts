@@ -9,7 +9,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 				return (
 					<Link
 						href={href}
-						className='text-[#1a365d] hover:text-[#f6ad55] transition-colors'>
+						className='text-primary hover:text-secondary transition-colors'>
 						{children}
 					</Link>
 				);
@@ -19,7 +19,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 					href={href}
 					target='_blank'
 					rel='noopener noreferrer'
-					className='text-[#1a365d] hover:text-[#f6ad55] transition-colors'>
+					className='text-primary hover:text-secondary transition-colors'>
 					{children}
 				</a>
 			);
@@ -34,28 +34,26 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 			/>
 		),
 		h1: ({ children }) => (
-			<h1 className='text-3xl font-bold text-[#1a365d] mb-6 mt-8'>
-				{children}
-			</h1>
+			<h1 className='text-3xl font-bold text-primary mb-6 mt-8'>{children}</h1>
 		),
 		h2: ({ children }) => (
-			<h2 className='text-2xl font-semibold text-[#1a365d] mb-4 mt-6'>
+			<h2 className='text-2xl font-semibold text-primary mb-4 mt-6'>
 				{children}
 			</h2>
 		),
 		h3: ({ children }) => (
-			<h3 className='text-xl font-semibold text-[#1a365d] mb-3 mt-5'>
+			<h3 className='text-xl font-semibold text-primary mb-3 mt-5'>
 				{children}
 			</h3>
 		),
 		p: ({ children }) => (
-			<p className='text-gray-700 mb-4 leading-relaxed'>{children}</p>
+			<p className='text-foreground-muted mb-4 leading-relaxed'>{children}</p>
 		),
 		ul: ({ children }) => <ul className='space-y-2 mb-4'>{children}</ul>,
 		li: ({ children }) => (
 			<li className='flex items-start'>
-				<span className='text-[#f6ad55] mr-2'>•</span>
-				<span className='text-gray-700'>{children}</span>
+				<span className='text-secondary mr-2'>•</span>
+				<span className='text-foreground-muted'>{children}</span>
 			</li>
 		),
 		ol: ({ children }) => (
@@ -66,23 +64,25 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 				<table className='w-full border-collapse'>{children}</table>
 			</div>
 		),
-		thead: ({ children }) => <thead className='bg-[#f7fafc]'>{children}</thead>,
+		thead: ({ children }) => (
+			<thead className='bg-background-alt'>{children}</thead>
+		),
 		th: ({ children }) => (
-			<th className='text-left p-3 font-semibold text-[#1a365d]'>{children}</th>
+			<th className='text-left p-3 font-semibold text-primary'>{children}</th>
 		),
 		td: ({ children }) => (
-			<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+			<td className='border-b border-border p-3 text-foreground-muted'>
 				{children}
 			</td>
 		),
 		tr: ({ children }) => <tr>{children}</tr>,
 		code: ({ children }) => (
-			<code className='bg-[#f7fafc] rounded px-1 py-0.5 font-mono text-sm text-[#1a365d]'>
+			<code className='bg-background-alt rounded px-1 py-0.5 font-mono text-sm text-primary'>
 				{children}
 			</code>
 		),
 		strong: ({ children }) => (
-			<strong className='font-semibold text-[#1a365d]'>{children}</strong>
+			<strong className='font-semibold text-primary'>{children}</strong>
 		),
 		...components,
 	};

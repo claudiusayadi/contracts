@@ -1,79 +1,97 @@
+import { CalendarDays } from 'lucide-react';
+
 export const metadata = {
 	title: 'Project Timeline',
 	totalWeeks: '4 Weeks',
 };
 
-Estimated project completion: **4 weeks** from kickoff
+<div className='flex items-center mb-4'>
+	<CalendarDays className='h-5 w-5 text-primary mr-2' />
+	<p className='text-foreground-muted font-medium'>
+		Estimated project completion:{' '}
+		<strong className='text-primary'>4 weeks</strong> from kickoff
+	</p>
+</div>
 
 <div className='overflow-x-auto mb-6'>
 	<table className='w-full border-collapse'>
-		<thead className='bg-[#f7fafc]'>
+		<thead className='bg-background-alt'>
 			<tr>
-				<th className='text-left p-3 font-semibold text-[#1a365d]'>Phase</th>
-				<th className='text-left p-3 font-semibold text-[#1a365d]'>Duration</th>
-				<th className='text-left p-3 font-semibold text-[#1a365d]'>
+				<th className='text-left p-3 font-semibold text-primary'>Phase</th>
+				<th className='text-left p-3 font-semibold text-primary'>Duration</th>
+				<th className='text-left p-3 font-semibold text-primary'>
 					Description
 				</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					Discovery & Planning
 				</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>3 Days</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
+					3 Days
+				</td>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					Requirements gathering, project scope definition, and kickoff meeting
 				</td>
 			</tr>
 			<tr>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					Design & Prototyping
 				</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>4 Days</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
+					4 Days
+				</td>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					UI/UX design, wireframes, mockups, and client approval
 				</td>
 			</tr>
 			<tr>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					Development (Frontend)
 				</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>7 Days</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
+					7 Days
+				</td>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					UI implementation, responsive components, and interactive elements
 				</td>
 			</tr>
 			<tr>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					Development (Backend/API)
 				</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>5 Days</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
+					5 Days
+				</td>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					API development, database setup, and content management system
 				</td>
 			</tr>
 			<tr>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					Testing & QA
 				</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>4 Days</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
+					4 Days
+				</td>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					Functional testing, cross-browser compatibility, and performance
 					optimization
 				</td>
 			</tr>
 			<tr>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					Deployment & Launch
 				</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>3 Days</td>
-				<td className='border-b border-[#e2e8f0] p-3 text-gray-700'>
+				<td className='border-b border-border p-3 text-foreground-muted'>
+					3 Days
+				</td>
+				<td className='border-b border-border p-3 text-foreground-muted'>
 					Server setup, domain configuration, and website launch
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
-
-**<CalendarDays className='h-5 w-5 text-[#1a365d] mr-2' /> Total Delivery Timeline: {metadata.totalWeeks}**

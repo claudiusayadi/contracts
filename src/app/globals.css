@@ -1,5 +1,30 @@
 @import 'tailwindcss';
 
+@theme {
+	/* Primary colors - Deep blue */
+	--color-primary: oklch(0.37 0.14 265.52); /* #1a365d */
+	--color-primary-light: oklch(0.44 0.11 240.79); /* #2c5282 */
+	--color-primary-dark: oklch(0.28 0.09 267.93); /* #102a43 */
+
+	/* Secondary colors - Orange accent */
+	--color-secondary: oklch(0.75 0.18 55.93); /* #f6ad55 */
+	--color-secondary-light: oklch(0.83 0.13 66.29); /* #fbd38d */
+	--color-secondary-dark: oklch(0.65 0.22 41.12); /* #dd6b20 */
+
+	/* Background colors */
+	--color-background: oklch(1 0 0); /* #ffffff */
+	--color-background-alt: oklch(0.97 0.01 247.9); /* #f7fafc */
+
+	/* Text colors */
+	--color-foreground: oklch(0.21 0.03 264.66); /* #1a202c */
+	--color-foreground-muted: oklch(0.45 0.03 256.8); /* #4a5568 */
+	--color-foreground-subtle: oklch(0.55 0.03 264.36); /* #718096 */
+
+	/* Border colors */
+	--color-border: oklch(0.93 0.01 255.51); /* #e2e8f0 */
+	--color-border-accent: oklch(0.75 0.18 55.93); /* #f6ad55 */
+}
+
 @layer base {
 	html {
 		scroll-behavior: smooth;

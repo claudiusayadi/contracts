@@ -11,11 +11,14 @@ export default function TimelineSection() {
 					<TimelineContent />
 				</div>
 
-				<div className='mt-6 p-4 bg-[#1a365d] text-white rounded-lg'>
-					<p className='font-medium'>
-						Total Delivery Timeline:{' '}
-						<span className='text-[#f6ad55]'>{metadata.totalWeeks}</span>
-					</p>
+				<div className='mt-6 p-4 bg-primary text-background rounded-lg'>
+					<div className='flex items-center'>
+						<CalendarDays className='h-5 w-5 text-secondary mr-2' />
+						<p className='font-medium'>
+							Total Delivery Timeline:{' '}
+							<span className='text-secondary'>{metadata.totalWeeks}</span>
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
