@@ -7,8 +7,7 @@ export default function TimelineSection() {
 		<section className='mb-12'>
 			<SectionTitle>{metadata.title}</SectionTitle>
 			<div className='animate-fadeIn'>
-				<div className='flex items-center mb-6'>
-					<CalendarDays className='h-5 w-5 text-[#1a365d] mr-2' />
+				<div className='flex flex-col mb-6'>
 					<TimelineContent />
 				</div>
 
