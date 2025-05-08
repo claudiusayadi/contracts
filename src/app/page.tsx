@@ -1,91 +1,91 @@
-import ProposalHeader from '@/components/ProposalHeader';
-import AboutSection from '@/components/sections/about';
-import OverviewSection from '@/components/sections/overview';
-import ClientSection from '@/components/sections/client';
-import ClientsSection from '@/components/sections/clients';
-import ScopeSection from '@/components/sections/scope';
-import TechStackSection from '@/components/sections/tech-stack';
-import TimelineSection from '@/components/sections/timeline';
-import PricingSection from '@/components/sections/pricing';
-import PaymentSection from '@/components/sections/payment';
-import SupportSection from '@/components/sections/support';
-import TeamSection from '@/components/sections/terms';
-import AcceptanceSection from '@/components/sections/acceptance';
+import React from 'react';
+import Header from '@/components/Header';
+import Overview from '@/components/sections/Overview';
+import CostBreakdown from '@/components/sections/CostBreakdown';
+import Timeline from '@/components/sections/Timeline';
+import LSO from '@/components/sections/LSO';
+import PaymentStructure from '@/components/sections/PaymentStructure';
+import Terms from '@/components/sections/Terms';
+import ScopeOfDelivery from '@/components/sections/ScopeOfDelivery';
+import AboutMe from '@/components/sections/AboutMe';
+import WhoDoIWorkWith from '@/components/sections/WhoDoIWorkWith';
+import Acceptance from '@/components/sections/Acceptance';
+import TechStack from '@/components/sections/TechStack';
+
+// Import JSON data
+import metadata from '@/content/metadata.json';
+import overviewData from '@/content/overview.json';
+import costBreakdownData from '@/content/cost-breakdown.json';
+import timelineData from '@/content/timeline.json';
+import lsoData from '@/content/lso.json';
+import paymentStructureData from '@/content/payment-structure.json';
+import termsData from '@/content/terms.json';
+import scopeOfDeliveryData from '@/content/scope-of-delivery.json';
+import aboutMeData from '@/content/about-me.json';
+import whoDoIWorkWithData from '@/content/who-do-i-work-with.json';
+import acceptanceData from '@/content/acceptance.json';
+import techStackData from '@/content/tech-stack.json';
 
 export default function Home() {
 	return (
-		<div className='min-h-screen bg-background'>
-			<ProposalHeader
-				email='ayadiclaudius@gmail.com'
-				date='May 8, 2023'
-				title='Web Development Project Proposal'
-				clientName='Explorers 33 Group'
+		<main className='min-h-screen bg-background'>
+			<Header
+				title={metadata.title}
+				developer={metadata.developer}
+				client={metadata.client}
+				date={metadata.date}
 			/>
 
-			<main className='max-w-5xl mx-auto px-6 py-16'>
-				<ClientSection />
+			<div className='max-w-5xl mx-auto'>
+				<Overview title={overviewData.title} content={overviewData.content} />
 
-				<div className='border-b border-border py-8'>
-					<OverviewSection />
-				</div>
+				<CostBreakdown
+					title={costBreakdownData.title}
+					content={costBreakdownData.content}
+				/>
 
-				<div className='border-b border-border py-8'>
-					<ScopeSection />
-				</div>
+				<Timeline title={timelineData.title} content={timelineData.content} />
 
-				<div className='border-b border-border py-8'>
-					<TechStackSection />
-				</div>
+				<TechStack
+					title={techStackData.title}
+					content={techStackData.content}
+				/>
 
-				<div className='border-b border-border py-8'>
-					<TimelineSection />
-				</div>
+				<ScopeOfDelivery
+					title={scopeOfDeliveryData.title}
+					content={scopeOfDeliveryData.content}
+				/>
 
-				<div className='border-b border-border py-8'>
-					<PricingSection />
-				</div>
+				<LSO title={lsoData.title} content={lsoData.content} />
 
-				<div className='border-b border-border py-8'>
-					<PaymentSection />
-				</div>
+				<PaymentStructure
+					title={paymentStructureData.title}
+					content={paymentStructureData.content}
+				/>
 
-				<div className='border-b border-border py-8'>
-					<SupportSection />
-				</div>
+				<Terms title={termsData.title} content={termsData.content} />
 
-				<div className='border-b border-border py-8'>
-					<TeamSection />
-				</div>
+				<Acceptance
+					title={acceptanceData.title}
+					content={acceptanceData.content}
+				/>
 
-				<div className='border-b border-border py-8'>
-					<AboutSection />
-				</div>
+				<AboutMe title={aboutMeData.title} content={aboutMeData.content} />
 
-				<div className='border-b border-border py-8'>
-					<ClientsSection />
-				</div>
+				<WhoDoIWorkWith
+					title={whoDoIWorkWithData.title}
+					content={whoDoIWorkWithData.content}
+				/>
+			</div>
 
-				<div className='py-8'>
-					<AcceptanceSection />
-				</div>
-			</main>
-
-			<footer className='bg-primary text-background py-8'>
-				<div className='max-w-5xl mx-auto px-6'>
-					<div className='flex flex-col md:flex-row justify-between items-center'>
-						<p className='mb-4 md:mb-0'>
-							© 2023 Claudius A. All rights reserved.
-						</p>
-						<div className='flex items-center gap-4'>
-							<a
-								href='mailto:ayadiclaudius@gmail.com'
-								className='text-background hover:text-secondary'>
-								ayadiclaudius@gmail.com
-							</a>
-						</div>
-					</div>
+			<footer className='py-8 mt-12 border-t border-border'>
+				<div className='max-w-5xl mx-auto px-4 text-center'>
+					<p className='text-foreground-muted text-sm'>
+						© {new Date().getFullYear()} {metadata.developer.name}. All rights
+						reserved.
+					</p>
 				</div>
 			</footer>
-		</div>
+		</main>
 	);
 }
