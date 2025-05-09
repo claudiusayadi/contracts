@@ -80,8 +80,8 @@ export default function Home() {
 			<footer className='py-8 mt-12 border-t border-border'>
 				<div className='max-w-5xl mx-auto px-4 text-center'>
 					<p className='text-foreground-muted text-sm'>
-						© {new Date().getFullYear()} {metadata.developer.name}. All rights
-						reserved.
+						© {new Date().getFullYear()} {metadata.developer.name} |{' '}
+						{metadata.agency.name}. All rights reserved.
 					</p>
 				</div>
 			</footer>
