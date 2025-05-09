@@ -2,7 +2,7 @@
 	"title": "Cost Breakdown",
 	"content": {
 		"type": "table",
-		"introduction": "Our transparent pricing structure ensures you know exactly what you're investing in. The following breakdown covers all aspects of your website development project.",
+		"introduction": "My transparent pricing structure ensures you know exactly what you are investing in. The following breakdown covers all aspects of your website development project.",
 		"columns": ["Item", "Cost (₦)", "Description"],
 		"rows": [
 			{

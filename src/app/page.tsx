@@ -1,28 +1,28 @@
-import Header from '@/components/Header';
-import Overview from '@/components/sections/Overview';
-import CostBreakdown from '@/components/sections/CostBreakdown';
-import Timeline from '@/components/sections/Timeline';
-import LSO from '@/components/sections/LSO';
-import PaymentStructure from '@/components/sections/PaymentStructure';
-import Terms from '@/components/sections/Terms';
-import ScopeOfDelivery from '@/components/sections/ScopeOfDelivery';
-import AboutMe from '@/components/sections/AboutMe';
-import WhoDoIWorkWith from '@/components/sections/WhoDoIWorkWith';
-import Acceptance from '@/components/sections/Acceptance';
-import TechStack from '@/components/sections/TechStack';
+import AboutMe from '@/components/sections/about-me';
+import Acceptance from '@/components/sections/acceptance';
+import CostBreakdown from '@/components/sections/cost-breakdown';
+import Header from '@/components/header';
+import LSO from '@/components/sections/lso';
+import Overview from '@/components/sections/overview';
+import PaymentStructure from '@/components/sections/payment-structure';
+import ScopeOfDelivery from '@/components/sections/scope-of-delivery';
+import TechStack from '@/components/sections/tech-stack';
+import Terms from '@/components/sections/terms';
+import Timeline from '@/components/sections/timeline';
+import WhoDoIWorkWith from '@/components/sections/who-do-i-work-with';
 
+import aboutMe from '@/content/about-me.json';
+import acceptance from '@/content/acceptance.json';
+import costBreakdown from '@/content/cost-breakdown.json';
+import lso from '@/content/lso.json';
 import metadata from '@/content/metadata.json';
-import overviewData from '@/content/overview.json';
-import costBreakdownData from '@/content/cost-breakdown.json';
-import timelineData from '@/content/timeline.json';
-import lsoData from '@/content/lso.json';
-import paymentStructureData from '@/content/payment-structure.json';
-import termsData from '@/content/terms.json';
-import scopeOfDeliveryData from '@/content/scope-of-delivery.json';
-import aboutMeData from '@/content/about-me.json';
-import whoDoIWorkWithData from '@/content/who-do-i-work-with.json';
-import acceptanceData from '@/content/acceptance.json';
-import techStackData from '@/content/tech-stack.json';
+import overview from '@/content/overview.json';
+import paymentStructure from '@/content/payment-structure.json';
+import scopeOfDelivery from '@/content/scope-of-delivery.json';
+import techStack from '@/content/tech-stack.json';
+import terms from '@/content/terms.json';
+import timeline from '@/content/timeline.json';
+import whoDoIWorkWith from '@/content/who-do-i-work-with.json';
 
 export default function Home() {
 	return (
@@ -36,44 +36,38 @@ export default function Home() {
 			/>
 
 			<div className='max-w-5xl mx-auto'>
-				<Overview title={overviewData.title} content={overviewData.content} />
+				<Overview title={overview.title} content={overview.content} />
 
 				<CostBreakdown
-					title={costBreakdownData.title}
-					content={costBreakdownData.content}
+					title={costBreakdown.title}
+					content={costBreakdown.content}
 				/>
 
-				<Timeline title={timelineData.title} content={timelineData.content} />
+				<Timeline title={timeline.title} content={timeline.content} />
 
-				<TechStack
-					title={techStackData.title}
-					content={techStackData.content}
-				/>
+				<TechStack title={techStack.title} content={techStack.content} />
 
 				<ScopeOfDelivery
-					title={scopeOfDeliveryData.title}
-					content={scopeOfDeliveryData.content}
+					title={scopeOfDelivery.title}
+					content={scopeOfDelivery.content}
 				/>
 
-				<LSO title={lsoData.title} content={lsoData.content} />
+				<LSO title={lso.title} content={lso.content} />
 
 				<PaymentStructure
-					title={paymentStructureData.title}
-					content={paymentStructureData.content}
+					title={paymentStructure.title}
+					content={paymentStructure.content}
 				/>
 
-				<Terms title={termsData.title} content={termsData.content} />
+				<Terms title={terms.title} content={terms.content} />
 
-				<Acceptance
-					title={acceptanceData.title}
-					content={acceptanceData.content}
-				/>
+				<Acceptance title={acceptance.title} content={acceptance.content} />
 
-				<AboutMe title={aboutMeData.title} content={aboutMeData.content} />
+				<AboutMe title={aboutMe.title} content={aboutMe.content} />
 
 				<WhoDoIWorkWith
-					title={whoDoIWorkWithData.title}
-					content={whoDoIWorkWithData.content}
+					title={whoDoIWorkWith.title}
+					content={whoDoIWorkWith.content}
 				/>
 			</div>
 
