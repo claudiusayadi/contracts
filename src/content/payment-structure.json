@@ -2,7 +2,7 @@
 	"title": "Payment Structure",
 	"content": {
 		"type": "table",
-		"introduction": "Our milestone-based payment structure ensures you only pay as the project progresses, with clear deliverables at each stage.",
+		"introduction": "Milestone-based payment structure ensures you only pay as the project progresses, with clear deliverables at each stage.",
 		"columns": ["Milestone", "Payment (₦)", "Description"],
 		"rows": [
 			{
