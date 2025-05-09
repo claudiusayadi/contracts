@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from '@/components/Header';
 import Overview from '@/components/sections/Overview';
 import CostBreakdown from '@/components/sections/CostBreakdown';
@@ -12,7 +11,6 @@ import WhoDoIWorkWith from '@/components/sections/WhoDoIWorkWith';
 import Acceptance from '@/components/sections/Acceptance';
 import TechStack from '@/components/sections/TechStack';
 
-// Import JSON data
 import metadata from '@/content/metadata.json';
 import overviewData from '@/content/overview.json';
 import costBreakdownData from '@/content/cost-breakdown.json';
@@ -31,6 +29,7 @@ export default function Home() {
 		<main className='min-h-screen bg-background'>
 			<Header
 				title={metadata.title}
+				agency={metadata.agency}
 				developer={metadata.developer}
 				client={metadata.client}
 				date={metadata.date}

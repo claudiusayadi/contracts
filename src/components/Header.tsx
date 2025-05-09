@@ -2,29 +2,25 @@ import React from 'react';
 
 interface HeaderProps {
 	title: string;
-	developer: {
-		name: string;
-		email: string;
-	};
-	client: {
-		name: string;
-		email: string;
-	};
+	agency: { name: string; email: string };
+	developer: { name: string; email: string };
+	client: { name: string; email: string };
 	date: string;
 }
 
 export default function Header({
 	title,
+	agency,
 	developer,
 	client,
 	date,
 }: HeaderProps) {
 	return (
-		<header className='bg-background-alt py-10 border-b border-border'>
+		<header className='bg-primary-light py-10 border-b border-border'>
 			<div className='max-w-5xl mx-auto px-4'>
 				<div className='mb-6'>
-					<h1 className='text-sm uppercase tracking-wider text-foreground-muted font-medium'>
-						odun.studio
+					<h1 className='text-2xl tracking-wider text-foreground-muted font-medium'>
+						{agency.name}
 					</h1>
 				</div>
 				<h1 className='text-3xl md:text-4xl font-bold text-foreground mb-10'>
