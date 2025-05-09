@@ -37,7 +37,7 @@ export default function Timeline({ title, content }: TimelineProps) {
 				))}
 			</div>
 
-			<div className='mt-8 text-foreground font-medium'>{content.footer}</div>
+			<div className='mt-8 text-foreground font-bold'>{content.footer}</div>
 		</Section>
 	);
 }
