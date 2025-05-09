@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-	title: 'Project Proposal | Web Development',
+	title: 'Project Proposal | Web Development | adun.studio',
 	description: 'Professional web development project proposal',
 };
 
