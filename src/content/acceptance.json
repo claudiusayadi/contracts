@@ -2,7 +2,7 @@
 	"title": "Acceptance",
 	"content": {
 		"type": "signature",
-		"text": "This document is a formal project contract. To proceed, please confirm in writing or return a signed version. Finalized work commences upon receipt of the first milestone payment.",
+		"text": "This document also serves as the formal project contract. To proceed, please confirm in writing or return a signed version. Estimated delivery timeline commences upon receipt of the first milestone payment.",
 		"signatures": [
 			{
 				"role": "Software Engineer",
